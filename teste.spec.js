@@ -6,8 +6,9 @@ describe("Site de compras", function () {
 
   let driver;
   before(async function () {
+    // driver = await new Builder().forBrowser("firefox").build();
     // driver = await new Builder().forBrowser("MicrosoftEdge").build();
-    driver = await new Builder().forBrowser("firefox").build();
+    driver = await new Builder().forBrowser("chrome").build();
   });
 
   it("Fazer compra", async function () {
